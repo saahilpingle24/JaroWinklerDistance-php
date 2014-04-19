@@ -1,5 +1,5 @@
 <h1>Jaro Winkler - php</h1>
-A crude implementation of the JaroWinker algorithm using php.
+A crude implementation of the JaroWinkler algorithm using php.
 
 <span style="font-size:0.8em"><b>Description:</b></span>
 <br>
