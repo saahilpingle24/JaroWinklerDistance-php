@@ -71,8 +71,14 @@ function jaroWinkler($string1, $string2, $PREFIXSCALE = 0.1, $threshold)
 	$prefixLength = prefixLength( $string1, $string2 );
 	$score = round(($jaroDistance + ($prefixLength * $PREFIXSCALE * (1.0 - $jaroDistance)))*100,2);
 	if ($score >= $threshold)
-		return $score." => High similarity level";
+		echo $score." => High similarity level";
 	else
-		return $score." => Low similarity level";
+		echo $score." => Low similarity level";
 }
+
+$string1 = $_POST['string1'];
+$string2 = $_POST['string2'];
+$threshold = $_POST['threshold'];
+jaroWinkler($string1, $string2, 0.1, $threshold);
+
 ?>
